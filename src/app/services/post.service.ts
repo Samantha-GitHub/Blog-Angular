@@ -51,4 +51,12 @@ export class PostService {
 
     ]
   }
+
+  getAllPosts(): Promise<Post[]> {
+
+    return new Promise<Post[]>((resolve, reject) => {
+
+      resolve(this.articulos)
+    })
+  };
 }
