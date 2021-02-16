@@ -80,4 +80,13 @@ export class PostService {
       console.log(arrFiltrado);
     })
   };
+
+  /*   agregarPost(pPost): Promise<Post> {
+      return new Promise<>((resolve, reject) => {
+  
+  
+      })
+  
+      resolve();
+    }; */
 }
