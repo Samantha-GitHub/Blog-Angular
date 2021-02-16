@@ -52,11 +52,32 @@ export class PostService {
     ]
   }
 
+
   getAllPosts(): Promise<Post[]> {
 
     return new Promise<Post[]>((resolve, reject) => {
 
       resolve(this.articulos)
+      console.log(this.articulos);
+
+    })
+  };
+
+
+  getPostByCategorias(pCategoria: string): Promise<Post[]> {
+    return new Promise<Post[]>((resolve, reject) => {
+
+      const arrFiltrado = [];
+
+      for (let articulo of this.articulos) {
+
+        if (articulo.categoria === pCategoria) {
+          arrFiltrado.push(articulo)
+        }
+      }
+      resolve(arrFiltrado)
+
+      console.log(arrFiltrado);
     })
   };
 }
