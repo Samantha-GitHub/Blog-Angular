@@ -2,12 +2,16 @@
 
     <div class="articulo" *ngFor="let post of listaPosts">
 
+        <h3>{{post.categoria.toUpperCase()}}</h3>
         <h2>{{post.titulo}} </h2>
-        <h3>{{post.categoria}}</h3>
-        <img [src]="post.imagen" alt="imagen del post">
+
+        <figure>
+            <img [src]="post.imagen" alt="imagen del post">
+        </figure>
+
         <p>{{post.texto}}</p>
         <h4>{{post.autor}}</h4>
-        <h5>{{post.fecha}}</h5>
+        <h4>{{post.fecha}}</h4>
     </div>
 
 </div>
