@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/post.interface';
+import { PostService } from 'src/app/services/post.service';
 
 
 @Component({
@@ -9,11 +10,20 @@ import { Post } from 'src/app/post.interface';
 })
 export class BlogComponent implements OnInit {
 
+  listaPosts: Post[];
 
 
-  constructor() { }
+  constructor(private postService: PostService) {
+    this.listaPosts = [];
+  }
 
-  ngOnInit(): void {
+  async ngOnInit() {
+
+    try {
+      this.listaPosts = await this.postService.getAllPosts();
+    } catch (error) {
+      console.log(error);
+    }
   }
 
 }
