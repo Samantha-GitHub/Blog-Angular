@@ -11,6 +11,8 @@ import { PostService } from 'src/app/services/post.service';
 export class BlogComponent implements OnInit {
 
   listaPosts: Post[];
+  listaCategorias: string[];
+
 
 
   constructor(private postService: PostService) {
@@ -24,6 +26,9 @@ export class BlogComponent implements OnInit {
     } catch (error) {
       console.log(error);
     }
+
+    this.listaCategorias = this.postService.getArrCategorias();
+
   }
 
   async onChange($event) {

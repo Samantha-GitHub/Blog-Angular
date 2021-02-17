@@ -81,6 +81,12 @@ export class PostService {
     })
   };
 
+  getArrCategorias(): string[] {
+
+    const arrNuevo = this.articulos.map(arrCategorias => arrCategorias.categoria);
+    return [...new Set(arrNuevo)];
+  }
+
   agregarPost(pPost) {
 
     this.articulos.push(pPost)
