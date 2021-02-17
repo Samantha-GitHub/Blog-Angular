@@ -1,3 +1,13 @@
+<select (change)="onChange($event)" id="selectCategoria">
+
+    <option value="todos">Ver todos </option>
+    <option [value]="categoria" *ngFor="let categoria of categoria">
+        {{ categoria }}
+    </option>
+
+</select>
+
+
 <div class="articulos">
 
     <div class="articulo" *ngFor="let post of listaPosts">

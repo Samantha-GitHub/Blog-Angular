@@ -17,7 +17,7 @@ export class PostService {
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
         autor: 'Lola Martínez',
         imagen: 'http://www.laborsord.org/images/blog/El-empleo-en-personas-con-discapacidad-auditiva.jpg',
-        fecha: '13 de Febrero de 2021',
+        fecha: new Date('2021/02/5 12:15'),
         categoria: 'empleo',
       },
 
@@ -26,7 +26,7 @@ export class PostService {
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
         autor: 'Pablo García',
         imagen: 'https://img2.rtve.es/v/5530085?w=1600&preview=1583356362400.jpg',
-        fecha: '31 de Diciembre de 2020',
+        fecha: new Date('2020/12/31 8:00'),
         categoria: 'medicina',
       },
 
@@ -35,7 +35,7 @@ export class PostService {
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
         autor: 'string',
         imagen: 'https://www.elcineenlasombra.com/wp-content/uploads/2018/10/pelicula-rodar-FB.jpg',
-        fecha: '3 de Enero de 2021',
+        fecha: new Date('2021/01/3 09:00'),
         categoria: 'Cine',
       },
 
@@ -44,7 +44,7 @@ export class PostService {
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
         autor: 'string',
         imagen: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/10/30/16040711338465.jpg',
-        fecha: '19 de Noviembre de 2020',
+        fecha: new Date('2020/11/19 12:00'),
         categoria: 'Cine',
       },
 
@@ -81,12 +81,9 @@ export class PostService {
     })
   };
 
-  /*   agregarPost(pPost): Promise<Post> {
-      return new Promise<>((resolve, reject) => {
-  
-  
-      })
-  
-      resolve();
-    }; */
+  agregarPost(pPost) {
+
+    this.articulos.push(pPost)
+
+  };
 }
