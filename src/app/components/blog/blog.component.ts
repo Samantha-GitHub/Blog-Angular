@@ -26,4 +26,16 @@ export class BlogComponent implements OnInit {
     }
   }
 
+  async onChange($event) {
+    try {
+      if ($event.target.value === 'todos') {
+        this.listaPosts = await this.postService.getAllPosts();
+      } else {
+        this.listaPosts = await this.postService.getPostByCategorias($event.target.value);
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  }
+
 }
