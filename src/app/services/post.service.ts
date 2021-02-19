@@ -33,7 +33,7 @@ export class PostService {
       {
         titulo: '¡Descubre la mejor película del mundo!',
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
-        autor: 'string',
+        autor: 'Jose P',
         imagen: 'https://www.elcineenlasombra.com/wp-content/uploads/2018/10/pelicula-rodar-FB.jpg',
         fecha: new Date('2021/01/3 09:00'),
         categoria: 'Cine',
@@ -42,7 +42,7 @@ export class PostService {
       {
         titulo: '¡No te lo pierdes : las nuevas peículas ahora en Cine!',
         texto: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, repellendus!',
-        autor: 'string',
+        autor: 'James L',
         imagen: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/10/30/16040711338465.jpg',
         fecha: new Date('2020/11/19 12:00'),
         categoria: 'Cine',

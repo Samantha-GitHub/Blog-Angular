@@ -1,0 +1,17 @@
+.ng-valid.ng-touched{
+
+    border-color: lightgreen;
+}
+
+.ng-invalid.ng-touched{
+      border-color: lightsalmon;
+}
+
+form{
+
+    margin: 20px;
+    border: lightseagreen solid 1px;
+    padding: 20px;
+    max-width: 50%;
+}
+

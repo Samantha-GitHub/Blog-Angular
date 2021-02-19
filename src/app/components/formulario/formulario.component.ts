@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { Post } from 'src/app/post.interface';
+import { PostService } from 'src/app/services/post.service';
 
 @Component({
   selector: 'app-formulario',
@@ -8,10 +10,68 @@ import { Post } from 'src/app/post.interface';
 })
 export class FormularioComponent implements OnInit {
 
+  formulario: FormGroup;
 
-  constructor() { }
+
+  constructor(private postService: PostService) {
+
+
+
+    this.formulario = new FormGroup({
+
+      titulo: new FormControl('', [
+
+        Validators.required
+
+      ]),
+
+      texto: new FormControl('', [
+
+        Validators.required,
+
+
+      ]),
+
+      autor: new FormControl('', [
+
+        Validators.required,
+
+
+      ]),
+
+      imagen: new FormControl('', [
+
+        Validators.required,
+
+      ]),
+      fecha: new FormControl('', [
+
+        Validators.required,
+
+      ]),
+      categoria: new FormControl('', [
+
+        Validators.required,
+
+
+      ]),
+
+
+    });
+
+  };
+
 
   ngOnInit(): void {
+  }
+
+  onSubmit() {
+
+    this.postService.agregarPost(this.formulario.value);
+    console.log(this.formulario.value);
+
+    this.formulario.reset();
+
   }
 
 }
