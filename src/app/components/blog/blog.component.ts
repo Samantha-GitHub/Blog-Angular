@@ -16,7 +16,17 @@ export class BlogComponent implements OnInit {
 
 
   constructor(private postService: PostService) {
-    this.listaPosts = [];
+
+    if (localStorage.getItem('arr_articulos')) {
+
+      const stringArray = localStorage.getItem('arr_articulos');
+      this.listaPosts = JSON.parse(stringArray);
+
+    } else {
+
+      this.listaPosts = [];
+    };
+
   }
 
   async ngOnInit() {

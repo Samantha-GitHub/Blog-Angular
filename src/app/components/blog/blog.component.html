@@ -3,7 +3,7 @@
     <option value="todos">Ver todos </option>
 
     <option [value]="categoria" *ngFor="let categoria of listaCategorias">
-        {{ categoria }}
+        {{ categoria.toUpperCase()}}
     </option>
 
 </select>

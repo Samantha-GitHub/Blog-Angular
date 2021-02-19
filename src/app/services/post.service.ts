@@ -18,7 +18,7 @@ export class PostService {
         autor: 'Lola Martínez',
         imagen: 'http://www.laborsord.org/images/blog/El-empleo-en-personas-con-discapacidad-auditiva.jpg',
         fecha: new Date('2021/02/5 12:15'),
-        categoria: 'empleo',
+        categoria: 'EMPLEO',
       },
 
       {
@@ -27,7 +27,7 @@ export class PostService {
         autor: 'Pablo García',
         imagen: 'https://img2.rtve.es/v/5530085?w=1600&preview=1583356362400.jpg',
         fecha: new Date('2020/12/31 8:00'),
-        categoria: 'medicina',
+        categoria: 'MEDICINA',
       },
 
       {
@@ -36,7 +36,7 @@ export class PostService {
         autor: 'Jose P',
         imagen: 'https://www.elcineenlasombra.com/wp-content/uploads/2018/10/pelicula-rodar-FB.jpg',
         fecha: new Date('2021/01/3 09:00'),
-        categoria: 'Cine',
+        categoria: 'CINE',
       },
 
       {
@@ -45,7 +45,7 @@ export class PostService {
         autor: 'James L',
         imagen: 'https://e00-marca.uecdn.es/assets/multimedia/imagenes/2020/10/30/16040711338465.jpg',
         fecha: new Date('2020/11/19 12:00'),
-        categoria: 'Cine',
+        categoria: 'CINE',
       },
 
 
@@ -89,7 +89,8 @@ export class PostService {
 
   agregarPost(pPost) {
 
-    this.articulos.push(pPost)
+    this.articulos.push(pPost);
+    localStorage.setItem('arr_articulos', JSON.stringify(this.articulos))
 
   };
 }

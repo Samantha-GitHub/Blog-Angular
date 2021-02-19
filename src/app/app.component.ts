@@ -8,6 +8,13 @@ import { Post } from './post.interface';
 })
 export class AppComponent {
 
+  mostrar: string;
 
   constructor() { }
+
+  onClick(pTexto) {
+
+    this.mostrar = pTexto;
+
+  };
 }
