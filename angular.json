@@ -52,9 +52,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [
-              "bootstrap.bundle.min.js / bootstrap.bundle.js"
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
