@@ -1,12 +1,23 @@
-<select (change)="onChange($event)" id="selectCategoria">
+<!-- CREACION DEL SELECT -->
 
-    <option value="todos">Ver todos </option>
+<div class="select">
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <label class="input-group-text label" for="inputGroupSelect01">Elige tu categoria : </label>
+        </div>
+        <select class="custom-select" id="inputGroupSelect01" (change)="onChange($event)" id="selectCategoria">
 
-    <option [value]="categoria" *ngFor="let categoria of listaCategorias">
-        {{ categoria.toUpperCase()}}
-    </option>
+            <option value="todos">Ver todos </option>
 
-</select>
+            <option [value]="categoria" *ngFor="let categoria of listaCategorias">
+                {{ categoria.toUpperCase()}}
+            </option>
+        </select>
+    </div>
+</div>
+
+
+<!-- CREACION DE LOS ARTICULOS -->
 
 
 <div class="articulos">
