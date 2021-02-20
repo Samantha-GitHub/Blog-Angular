@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Post } from 'src/app/post.interface';
 import { PostService } from 'src/app/services/post.service';
+import { Error404Component } from '../error404/error404.component';
 
 
 @Component({
@@ -49,7 +50,8 @@ export class BlogComponent implements OnInit {
         this.listaPosts = await this.postService.getPostByCategorias($event.target.value);
       }
     } catch (error) {
-      console.log(error);
+
+      error.error404()
     }
   }
 

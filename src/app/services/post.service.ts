@@ -93,4 +93,8 @@ export class PostService {
     localStorage.setItem('arr_articulos', JSON.stringify(this.articulos))
 
   };
+
+  error404() {
+
+  }
 }
