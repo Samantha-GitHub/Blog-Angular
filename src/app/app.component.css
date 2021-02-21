@@ -1,15 +1,54 @@
+
+.myContainer{
+
+    width: 80%;
+
+    margin: 0 auto;
+}
+
+.header{
+
+  border: 3px solid #f59002c7;
+  padding: 18.5%;
+  background: url(https://i.pinimg.com/originals/80/0e/28/800e28451016dfe351fa5a65b97fc02a.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  margin-bottom: 10px;
+}
+
+h1, h3{
+
+    text-align: center;
+    color: #f59002c7;
+    padding: 20px;
+
+    
+}
+
 .miColor{
 
     background-color: #60B2E6;
     color: white;
 }
 
-div{
+.text-center{
+    background-color: #95cdf0;
 
-   background-color: #95cdf0;
-    
 }
 
 a{
     color:  white;;
 }
+
+ footer{
+
+   background-color: #95cdf0;
+   color: white;
+   padding: 5px;
+   margin-top: 20px;
+    
+}
+
+
+
