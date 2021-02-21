@@ -15,3 +15,8 @@ form{
     max-width: 50%;
 }
 
+.error {
+    font-size: 12px;
+    color: tomato;
+}
+
