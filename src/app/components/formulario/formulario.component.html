@@ -16,11 +16,10 @@
         <label>Texto :</label>
 
         <input type="text" class="form-control" formControlName="texto">
-        <p class="error"
-            *ngIf="formulario.get('texto').hasError('required') && formulario.get('texto').touched || formulario.get('texto').errors.minLenght ">
+        <p class="error" *ngIf="formulario.get('texto').hasError('required') && formulario.get('texto').touched ">
             El texto es requirido
         </p>
-        <p class="error" *ngIf="formulario.get('texto').errors.minlength ">El texto debe contener un mínimo de 20
+        <p class="error" *ngIf="formulario.get('texto').hasError('minlength') ">El texto debe contener un mínimo de 20
             palabras</p>
 
     </div>
