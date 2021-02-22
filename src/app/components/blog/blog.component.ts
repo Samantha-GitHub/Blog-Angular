@@ -51,7 +51,8 @@ export class BlogComponent implements OnInit {
       }
     } catch (error) {
 
-      error.error404()
+      console.log(error);
+
     }
   }
 

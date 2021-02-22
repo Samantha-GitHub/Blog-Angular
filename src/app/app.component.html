@@ -1,18 +1,13 @@
-<div class="header">
-    <h1>¡ NEWS BLOG !</h1>
-    <h3>Las últimas noticias</h3>
-</div>
-
 <div class="card text-center">
     <div class="card-header">
         <ul class="nav nav-pills card-header-pills">
             <li class="nav-item">
-                <a class="nav-link" href="#" [routerLink]="['/blog']" (click)="onClick('blog')"
+                <a class="nav-link" [routerLink]="['/blog']" (click)="onClick('blog')"
                     [ngClass]="{ miColor: (mostrar === 'blog') }">Ir
                     al Blog</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link " href="#" [routerLink]="['/new']" (click)="onClick('new')"
+                <a class="nav-link " [routerLink]="['/new']" (click)="onClick('new')"
                     [ngClass]="{ miColor: (mostrar === 'new') }">Crear nuevo artículo</a>
             </li>
 
@@ -27,9 +22,4 @@
 
 </div>
 
-<footer>
-    <br>
-
-    <p>&copy; 2021 Samantha.O - Proyecto Blog Neoland </p>
-
-</footer>
+<app-footer></app-footer>

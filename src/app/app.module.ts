@@ -7,13 +7,17 @@ import { AppComponent } from './app.component';
 import { BlogComponent } from './components/blog/blog.component';
 import { FormularioComponent } from './components/formulario/formulario.component';
 import { Error404Component } from './components/error404/error404.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BlogComponent,
     FormularioComponent,
-    Error404Component
+    Error404Component,
+    HeroComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
