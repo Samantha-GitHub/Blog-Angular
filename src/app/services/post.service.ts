@@ -89,12 +89,10 @@ export class PostService {
 
   agregarPost(pPost) {
 
+    pPost.categoria = pPost.categoria.toUpperCase();
+
     this.articulos.push(pPost);
     localStorage.setItem('arr_articulos', JSON.stringify(this.articulos))
-
   };
 
-  error404() {
-
-  }
 }
