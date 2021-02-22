@@ -1,12 +1,14 @@
 .header{
 
+  width: 100% !important;
   border: 3px solid #f59002c7;
-  padding: 18.5%;
+  padding: 16.8%;
   background: url(https://i.pinimg.com/originals/80/0e/28/800e28451016dfe351fa5a65b97fc02a.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size:cover;
   margin-bottom: 10px;
+  
 }
 
 h1, h3{

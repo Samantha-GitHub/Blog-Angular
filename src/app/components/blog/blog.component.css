@@ -57,7 +57,7 @@ h4{
 .select{
      margin-top: 5px;
      width: 33.33%;
-}
+} 
 
 
 /*MEDIA QUERIES*/
@@ -69,12 +69,12 @@ h4{
 
     display: grid;
     grid-template-columns: 1fr;
-    gap: 5%;
+    
     
     }
 
     .select{
-        
+
         width: 100%;
     }
 
