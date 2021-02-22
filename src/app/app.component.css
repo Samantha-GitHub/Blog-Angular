@@ -23,7 +23,6 @@ h1, h3{
     color: #f59002c7;
     padding: 20px;
 
-    
 }
 
 .miColor{
@@ -48,6 +47,43 @@ a{
    padding: 5px;
    margin-top: 20px;
     
+}
+
+/* MEDIA QUERIES */
+
+
+@media(max-width:767px){ 
+
+    .myContainer{
+
+     width: 100%;
+    }
+
+    .header{
+
+     border: 3px solid #f59002c7;
+     background: url(https://i.pinimg.com/originals/80/0e/28/800e28451016dfe351fa5a65b97fc02a.jpg);
+     background-repeat:no-repeat;
+     background-position: top;
+     background-size:auto;
+     margin-bottom: 10px;
+     padding: 25%;
+    }
+
+   /*  .header h1{
+
+        font-size: 1.5em;
+    }
+
+    .header h3{
+
+        font-size: 1em;
+    } */
+
+  
+
+    
+
 }
 
 
